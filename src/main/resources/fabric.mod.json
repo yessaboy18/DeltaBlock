@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "deltablock",
+	"version": "${version}",
+	"name": "DeltaBlock",
+	"description": "Jump into a new Minecraft experience mixed with the Deltarune's light and dark worlds!",
+	"authors": [
+		"YessaBoy18"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/deltablock/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.yessaboy18.deltarunemc.DeltaBlock"
+		],
+		"fabric-datagen": [
+			"com.yessaboy18.deltarunemc.DeltaBlockDataGenerator"
+		]
+	},
+	"mixins": [
+		"deltablock.mixins.json"
+	],
+	"client": [
+		"com.yessaboy18.deltarunemc.DeltaBlockClient"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
