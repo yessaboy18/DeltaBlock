@@ -20,6 +20,6 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(BLACK_SHARD);
         });
-        DeltaBlock.LOGGER.info("TURNED OBJECTS INTO DARKNERS");
+        DeltaBlock.LOGGER.info("...TO TURN OBJECTS INTO DARKNERS");
     }
 }
