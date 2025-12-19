@@ -1,4 +1,8 @@
 {
   "item.deltablock.black_shard": "Black Shard",
-  "block.deltablock.darkness_stone": "Shadow Stone"
+  "item.deltablock.shadow_crystal": "Shadow Crystal",
+
+  "block.deltablock.darkness_stone": "Shadow Stone",
+
+  "itemgroup.deltablock.deltablock_group": "DeltaBlock's Items"
 }

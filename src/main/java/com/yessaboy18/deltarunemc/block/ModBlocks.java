@@ -33,6 +33,9 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(DARKNESS_STONE);
         });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(DARKNESS_STONE);
+        });
         DeltaBlock.LOGGER.info("SHALL THESE BLOCKS BE FOUNDATION...");
     }
 }

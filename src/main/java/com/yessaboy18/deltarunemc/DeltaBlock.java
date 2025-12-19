@@ -1,5 +1,6 @@
 package com.yessaboy18.deltarunemc;
 
+import com.yessaboy18.deltarunemc.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 import com.yessaboy18.deltarunemc.item.ModItems;
 import com.yessaboy18.deltarunemc.block.ModBlocks;
@@ -14,6 +15,7 @@ public class DeltaBlock implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
-		LOGGER.info("AND THE DARKNESS WAS SPREAD AGAIN...");
+		ModItemGroups.registerItemGroups();
+		LOGGER.info("...WHEN THE DARKNESS IS GONNA SPREAD AGAIN");
 	}
 }

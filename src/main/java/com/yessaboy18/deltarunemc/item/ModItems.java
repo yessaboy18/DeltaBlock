@@ -11,15 +11,23 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item BLACK_SHARD = registerItem("black_shard", new Item(new Item.Settings()));
+    public static final Item SHADOW_CRYSTAL = registerItem("shadow_crystal", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(DeltaBlock.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(SHADOW_CRYSTAL);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(BLACK_SHARD);
         });
-        DeltaBlock.LOGGER.info("...TO TURN OBJECTS INTO DARKNERS");
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(BLACK_SHARD);
+            fabricItemGroupEntries.add(SHADOW_CRYSTAL);
+        });
+        DeltaBlock.LOGGER.info("...TO TURN OBJECTS INTO DARKNERS...");
     }
 }
