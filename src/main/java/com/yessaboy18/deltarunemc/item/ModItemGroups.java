@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.deltablock.deltablock_group"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.BLACK_SHARD);
+                        entries.add(ModItems.IRON_KNIFE);
                         entries.add(ModItems.SHADOW_CRYSTAL);
                         entries.add(ModBlocks.DARKNESS_STONE);
                     }).build());

@@ -1,5 +1,7 @@
 package com.yessaboy18.deltarunemc;
 
+import com.yessaboy18.deltarunemc.combat.CombatEvents;
+import com.yessaboy18.deltarunemc.effect.ModEffects;
 import com.yessaboy18.deltarunemc.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 import com.yessaboy18.deltarunemc.item.ModItems;
@@ -13,9 +15,11 @@ public class DeltaBlock implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		CombatEvents.register();
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
+		ModEffects.regsiterEffects();
 		LOGGER.info("...WHEN THE DARKNESS IS GONNA SPREAD AGAIN");
 	}
 }

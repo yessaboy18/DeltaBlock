@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures":{
-    "layer0": "deltablock:item/black_shard"
+    "layer0": "deltablock:item/iron_knife"
   }
 }

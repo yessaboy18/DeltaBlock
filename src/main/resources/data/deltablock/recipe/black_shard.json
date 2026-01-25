@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "deltablock:shadow_crystal"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "N": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CNC",
+    "ICC"
+  ],
+  "result": {
+    "id": "deltablock:black_shard",
+    "count": 1
+  }
+}
