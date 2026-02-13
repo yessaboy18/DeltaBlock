@@ -20,6 +20,11 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.ANCIENT_DEBRIS)
     ));
 
+    public static final Block DARK_BLOCK = registerBlock("dark_block", new Block(AbstractBlock.Settings.create()
+            .strength(50f)
+            .dropsNothing()
+    ));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(DeltaBlock.MOD_ID, name), block);
@@ -32,6 +37,7 @@ public class ModBlocks {
     public static void registerModBlocks() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(DARKNESS_STONE);
+            fabricItemGroupEntries.add(DARK_BLOCK);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(DARKNESS_STONE);

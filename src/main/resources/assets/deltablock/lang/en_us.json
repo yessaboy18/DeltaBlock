@@ -1,9 +1,15 @@
 {
+  "item.deltablock.completed_rune": "DeltaRune",
   "item.deltablock.black_shard": "Black Shard",
+  "item.deltablock.broken_soul": "Broken Soul",
   "item.deltablock.iron_knife": "Kris' Knife",
+  "item.deltablock.rune_piece": "Strange Piece",
   "item.deltablock.shadow_crystal": "Shadow Crystal",
 
+  "block.deltablock.dark_block": "Darkness",
   "block.deltablock.darkness_stone": "Shadow Stone",
+
+  "effect.deltablock.bleeding": "Bleeding",
 
   "itemgroup.deltablock.deltablock_group": "DeltaBlock's Items"
 }

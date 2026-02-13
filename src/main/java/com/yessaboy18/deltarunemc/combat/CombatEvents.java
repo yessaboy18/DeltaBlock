@@ -6,7 +6,7 @@ import net.minecraft.util.ActionResult;
 
 public class CombatEvents {
 
-    public static void register() {
+    public static void registerCombatEvents() {
         AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
 
             if (world.isClient()) return ActionResult.PASS;

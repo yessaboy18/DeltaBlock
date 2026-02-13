@@ -15,11 +15,11 @@ public class DeltaBlock implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		CombatEvents.register();
+		CombatEvents.registerCombatEvents();
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
-		ModEffects.regsiterEffects();
+		ModEffects.registerEffects();
 		LOGGER.info("...WHEN THE DARKNESS IS GONNA SPREAD AGAIN");
 	}
 }

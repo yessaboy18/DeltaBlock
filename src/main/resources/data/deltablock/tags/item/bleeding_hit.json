@@ -1,9 +1,6 @@
 {
   "values": [
     "deltablock:iron_knife",
-    "deltablock:black_shard",
-    "minecraft:iron_sword",
-    "minecraft:diamond_sword",
-    "minecraft:netherite_sword"
+    "deltablock:black_shard"
   ]
 }

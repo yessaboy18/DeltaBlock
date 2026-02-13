@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "deltablock:rune_piece"
+    },
+    "S": {
+      "item": "deltablock:shadow_crystal"
+    },
+    "B": {
+      "item": "deltablock:broken_soul"
+    }
+  },
+  "pattern": [
+    " B ",
+    "RSR",
+    "SRS"
+  ],
+  "result": {
+    "id": "deltablock:completed_rune",
+    "count": 1
+  }
+}

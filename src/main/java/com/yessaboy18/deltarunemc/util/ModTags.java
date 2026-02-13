@@ -18,6 +18,7 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> BLEEDING_HIT = createTag("bleeding_hit");
         public static final TagKey<Item> DARKWORLD_ITEM = createTag("darkworld_item");
+        public static final TagKey<Item> LIGHTWORLD_ITEM = createTag("lightworld_item");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(DeltaBlock.MOD_ID, name));

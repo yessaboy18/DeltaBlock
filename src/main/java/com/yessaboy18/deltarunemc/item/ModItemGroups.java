@@ -17,10 +17,15 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.DARKNESS_STONE))
                     .displayName(Text.translatable("itemgroup.deltablock.deltablock_group"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.BROKEN_SOUL);
                         entries.add(ModItems.BLACK_SHARD);
-                        entries.add(ModItems.IRON_KNIFE);
-                        entries.add(ModItems.SHADOW_CRYSTAL);
+                        entries.add(ModBlocks.DARK_BLOCK);
+                        entries.add(ModItems.COMPLETED_RUNE);
                         entries.add(ModBlocks.DARKNESS_STONE);
+                        entries.add(ModItems.IRON_KNIFE);
+                        entries.add(ModItems.RUNE_PIECE);
+                        entries.add(ModItems.SHADOW_CRYSTAL);
+
                     }).build());
 
     public static void registerItemGroups() {

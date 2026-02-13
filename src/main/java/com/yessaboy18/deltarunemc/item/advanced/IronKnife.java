@@ -1,5 +1,7 @@
 package com.yessaboy18.deltarunemc.item.advanced;
 
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -23,5 +25,11 @@ public class IronKnife extends Item {
                     false // false = chat, true = action bar
             );
         }
+    }
+
+    @Override
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        stack.damage(1, attacker, EquipmentSlot.MAINHAND);
+        return true;
     }
 }
